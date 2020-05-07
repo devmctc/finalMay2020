@@ -4,8 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DefaultComponent } from './layouts/default/default.component';
-import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { DefaultModule } from './layouts/default/default.module';
 
 
 
@@ -13,13 +12,13 @@ import { DashboardComponent } from './modules/dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DefaultComponent,
-    DashboardComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DefaultModule
  
   ],
   providers: [],
